@@ -1,0 +1,196 @@
+Ex. 1 
+
+package main
+
+import "fmt"
+
+func main() {
+    var num1, num2, num3, soma int
+
+    fmt.Print("Digite o primeiro número: ")
+    fmt.Scan(&num1)
+
+    fmt.Print("Digite o segundo número: ")
+    fmt.Scan(&num2)
+
+    fmt.Print("Digite o terceiro número: ")
+    fmt.Scan(&num3)
+
+    soma = num1 + num2 + num3
+
+    fmt.Println("A soma dos três números é:", soma)
+}
+
+Ex. 2
+
+package main
+
+import "fmt"
+
+func main() {
+    var num int
+
+    fmt.Print("Digite um número inteiro: ")
+    fmt.Scan(&num)
+
+    dobro := num * 2
+    triplo := num * 3
+    quadruplo := num * 4
+
+    fmt.Printf("O dobro de %d é %d\n", num, dobro)
+    fmt.Printf("O triplo de %d é %d\n", num, triplo)
+    fmt.Printf("O quadruplo de %d é %d\n", num, quadruplo)
+}
+
+
+Ex.3
+
+package main
+
+import "fmt"
+
+func main() {
+    var peso, altura float64
+
+    fmt.Print("Digite o seu peso (em kg): ")
+    fmt.Scan(&peso)
+
+    fmt.Print("Digite a sua altura (em metros): ")
+    fmt.Scan(&altura)
+
+    imc := peso / (altura * altura)
+
+    fmt.Printf("O seu IMC é %.2f\n", imc)
+}
+
+
+Ex. 4
+
+package main
+
+import "fmt"
+
+func main() {
+    var num1, num2, num3 float64
+
+    fmt.Print("Digite o primeiro número: ")
+    fmt.Scan(&num1)
+
+    fmt.Print("Digite o segundo número: ")
+    fmt.Scan(&num2)
+
+    fmt.Print("Digite o terceiro número: ")
+    fmt.Scan(&num3)
+
+    mediaPonderada := (num1*2 + num2*3 + num3*5) / 10
+
+    fmt.Printf("A média ponderada é %.2f\n", mediaPonderada)
+}
+
+Ex. 5
+
+package main
+
+import "fmt"
+
+func main() {
+    var idadeAnos int
+
+    fmt.Print("Digite a idade em anos: ")
+    fmt.Scan(&idadeAnos)
+
+    idadeDias := idadeAnos * 365
+
+    fmt.Printf("A idade em dias é %d\n", idadeDias)
+}
+
+Ex. 6
+
+package main
+
+import "fmt"
+
+func main() {
+    var salario float64
+
+    fmt.Print("Digite o salário atual: ")
+    fmt.Scan(&salario)
+
+    novoSalario := salario * 1.15
+
+    fmt.Printf("O novo salário é R$ %.2f\n", novoSalario)
+}
+
+Ex. 7
+
+package main
+
+import "fmt"
+
+func main() {
+    var num int
+
+    fmt.Print("Digite um número inteiro: ")
+    fmt.Scan(&num)
+
+    antecessor := num - 1
+    sucessor := num + 1
+
+    fmt.Printf("O antecessor de %d é %d e o sucessor é %d\n", num, antecessor, sucessor)
+}
+
+Ex. 8
+
+package main
+
+import "fmt"
+
+func main() {
+    var diasTrabalhados int
+    var valorDiaria float64
+
+    fmt.Print("Digite o número de dias trabalhados: ")
+    fmt.Scan(&diasTrabalhados)
+
+    fmt.Print("Digite o valor da diária: ")
+    fmt.Scan(&valorDiaria)
+
+    salario := float64(diasTrabalhados) * valorDiaria
+
+    fmt.Printf("O salário do funcionário é R$ %.2f\n", salario)
+}
+
+
+Ex. 9 
+
+package main
+
+import "fmt"
+
+func main() {
+    var precoProduto float64
+
+    fmt.Print("Digite o preço do produto: ")
+    fmt.Scan(&precoProduto)
+
+    precoComDesconto := precoProduto * 0.9
+
+    fmt.Printf("O preço com desconto é R$ %.2f\n", precoComDesconto)
+}
+
+Ex. 10
+
+package main
+
+import "fmt"
+
+func main() {
+    var pesoKilos float64
+
+    fmt.Print("Digite o peso em quilos: ")
+    fmt.Scan(&pesoKilos)
+
+    pesoLibras := pesoKilos * 2.20462
+
+    fmt.Printf("O peso em libras é %.2f\n", pesoLibras)
+}
