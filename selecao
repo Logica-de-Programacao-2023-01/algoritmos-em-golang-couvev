@@ -1,0 +1,172 @@
+Ex. 1 
+
+package main
+
+import "fmt"
+
+func main() {
+	var num1 int
+	var num2 int
+	fmt.Print("Digite o primeiro numero: ")
+	fmt.Scan(&num1)
+	fmt.Print("Digite o segundo numero: ")
+	fmt.Scan(&num2)
+
+	if num1 > num2 {
+
+		fmt.Print("O maior numero é: ", num1)
+
+	} else if num2 > num1 {
+
+		fmt.Print("O maior numero é: ", num2)
+
+	} else {
+
+		fmt.Print("Os dois numeros são iguais.")
+
+	}
+
+}
+
+Ex. 2
+
+package main
+
+import "fmt"
+
+func main() {
+	lista := []int{}
+	var num1, num2, num3 int
+	fmt.Print("Digite o primeiro numero: ")
+	fmt.Scan(&num1)
+	fmt.Print("Digite o segundo numero: ")
+	fmt.Scan(&num2)
+	fmt.Print("Digite o terceiro numero: ")
+	fmt.Scan(&num3)
+
+	lista = append(lista, num1, num2, num3)
+
+	fmt.Print("O menor numero é: ", min(lista))
+}
+
+func min(nums []int) int {
+	if len(nums) == 0 {
+		return 0
+	}
+	min := nums[0]
+	for _, num := range nums {
+		if num < min {
+			min = num
+		}
+	}
+	return min
+}
+
+Ex. 3
+
+package main
+
+import "fmt"
+
+func main() {
+	var num int
+	fmt.Print("Digite um numero inteiro:")
+	fmt.Scan(&num)
+
+	if num%2 == 0 {
+		fmt.Print("O numero é par")
+	} else {
+		fmt.Print("O numero é impar")
+	}
+}
+
+Ex. 4
+
+package main
+
+import "fmt"
+
+func main() {
+	var peso, altura float64
+
+	fmt.Print("Digite o seu peso (em kg): ")
+	fmt.Scan(&peso)
+
+	fmt.Print("Digite a sua altura (em metros): ")
+	fmt.Scan(&altura)
+
+	imc := peso / (altura * altura)
+
+	fmt.Println("O seu IMC é: ", imc)
+
+	if imc <= 18.5 {
+		fmt.Print("Você esta com 'MAGREZA'")
+	} else if imc >= 18.5 && imc <= 24.9 {
+		fmt.Print("Você é normal")
+	} else if imc >= 25 && imc >= 29.9 {
+		fmt.Print("Você tem sobrepeso")
+	} else if imc >= 30 && imc <= 39.9 {
+		fmt.Print("Você esta obeso")
+	} else if imc >= 40 {
+		fmt.Print("Você tem ebesidade grave")
+	}
+}
+
+Ex. 5
+
+package main
+
+import "fmt"
+
+func main() {
+	var peso, altura float64
+
+	fmt.Print("Digite o seu peso (em kg): ")
+	fmt.Scan(&peso)
+
+	fmt.Print("Digite a sua altura (em metros): ")
+	fmt.Scan(&altura)
+
+	imc := peso / (altura * altura)
+
+	fmt.Println("O seu IMC é: ", imc)
+
+	if imc <= 18.5 {
+
+		fmt.Print("Você esta com 'MAGREZA'")
+
+	} else if imc >= 18.5 && imc <= 24.9 {
+
+		fmt.Print("Você é normal")
+
+	} else if imc >= 25 && imc >= 29.9 {
+		fmt.Print("Você tem sobrepeso")
+	} else if imc >= 30 && imc <= 39.9 {
+		fmt.Print("Você esta obeso")
+	} else if imc >= 40 {
+		fmt.Print("Você tem ebesidade grave")
+	}
+}
+
+Ex. 6
+
+package main
+
+import "fmt"
+
+func main() {
+
+	var num1, num2 int
+	fmt.Print("Digite o primeiro número: ")
+	fmt.Scanln(&num1)
+	fmt.Print("Digite o segundo número: ")
+	fmt.Scanln(&num2)
+
+	if num1 > 0 && num2 > 0 {
+		fmt.Printf("O resultado da multiplicação entre %d e %d é: %d\n", num1, num2, num1*num2)
+	} else {
+		fmt.Printf("O resultado da soma entre %d e %d é: %d\n", num1, num2, num1+num2)
+	}
+}
+
+Ex. 7 
